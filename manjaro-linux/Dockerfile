@@ -8,4 +8,4 @@ RUN mkdir -p /root/.gnupg \
     pacman-key --populate archlinux manjaro \
  && pacman -S archlinux-keyring manjaro-keyring --noconfirm \
  && pacman -Syyu --noconfirm \
- && pacman -Sc
+ && pacman -Sc --noconfirm
