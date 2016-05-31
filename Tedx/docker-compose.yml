@@ -1,0 +1,17 @@
+version: "2"
+services:
+  mongodb:
+    container_name: mongodb
+    image: mongo
+    volumes:
+      - ./data:/data/db
+  texd:
+    build: .
+    depends_on:
+      - mongodb
+    environment:
+      - prod=true
+      # - IP=<defaults to localhost, can be url>
+    ports:
+      - "3000:3000"
+      - "3001:3001"
