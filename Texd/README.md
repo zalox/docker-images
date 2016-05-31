@@ -11,5 +11,6 @@ A simple docker-compose-project to deploy [Texd](https://github.com/TeamTobb/Tex
 ```bash
 $ git clone https://github.com/zalox/docker-images
 $ cd docker-images/Texd
-# docker-compose up
+# as root or privileged 
+$ docker-compose up
 ```
