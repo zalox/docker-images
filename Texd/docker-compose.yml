@@ -10,7 +10,7 @@ services:
     depends_on:
       - mongodb
     environment:
-      - prod=true
+      - prod=false
       # - IP=<defaults to localhost, can be url>
     ports:
       - "3000:3000"
