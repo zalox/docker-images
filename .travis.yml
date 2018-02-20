@@ -1,0 +1,11 @@
+sudo: required
+
+env:
+  - image: Texd
+  - image: manjaro-linux
+
+services:
+  - docker
+
+script:
+  - docker build "./${distribution}"
