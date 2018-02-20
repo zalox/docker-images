@@ -9,9 +9,8 @@ RUN mkdir -p /root/.gnupg /root/.gnupg/dirmngr-cache.d \
  && pacman-key --init \
  && pacman-key --populate archlinux \
  && pacman-key --populate manjaro \
- && dirmngr < /dev/null
-RUN yes | pacman -S pacman-mirrors libusb
-RUN rm -rf /etc/ssl/certs/ca-certificates.crt \
+ && dirmngr < /dev/null \
+ && pacman -S --noconfirm pacman-mirrors libusb ca-certificates \
  && pacman -Su --noconfirm \
  && pacman -Sc --noconfirm
 
