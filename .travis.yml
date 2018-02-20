@@ -8,4 +8,4 @@ services:
   - docker
 
 script:
-  - docker build "./${distribution}"
+  - docker build "./${image}"
