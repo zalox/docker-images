@@ -3,6 +3,7 @@ sudo: required
 env:
   - image: Texd
   - image: manjaro-linux
+  - image: borg-backup
 
 services:
   - docker
